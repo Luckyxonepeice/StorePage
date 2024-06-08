@@ -1,0 +1,46 @@
+.header{
+    position: absolute;
+    width: 1280px; 
+    height: 105px; 
+    left: 0px; 
+    top: 0px;
+}
+
+.trim{
+    position: absolute; 
+    height: 28px; 
+    left: 3.91%; 
+    right: 80.7%; 
+    top: 19px; 
+    font-family: 'Comme'; 
+    font-style: normal; 
+    font-weight: 400; 
+    font-size: 18px; 
+    line-height: 28px; 
+    display: flex; 
+    align-items: center; 
+    letter-spacing: 0.55em; 
+    color: #E5DFD9;
+}
+
+.group {
+    position: absolute;
+    width: 161px;
+    height: 24px;
+    left: 1093px;
+    top: 21px;
+}
+
+.search{
+    position: absolute; 
+    width: 18px; 
+    height: 18px; 
+    left: 3px; 
+    top: 3px; 
+    font-family: 'Font Awesome 5 Pro'; 
+    font-style: normal; 
+    font-weight: 400; 
+    font-size: 18px; 
+    line-height: 18px;
+    color: #E5DFD9;
+}
