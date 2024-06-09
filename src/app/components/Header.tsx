@@ -39,7 +39,7 @@ export default function Header() {
           Jewellery
         </div>
       </div>
-
+      <Slider type={type}></Slider>
     </div>
   )
 }
