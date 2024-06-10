@@ -1,10 +1,9 @@
 
 import React from 'react'
-import { PiHandbagSimpleLight } from "react-icons/pi";
+import { IoShirt } from "react-icons/io5";
 import { GiNecklaceDisplay } from "react-icons/gi";
-import { BsLuggage } from "react-icons/bs";
-import { GiDiamondRing } from "react-icons/gi";
-import { IoDiamondSharp } from "react-icons/io5";
+import { GiAmpleDress } from "react-icons/gi";
+import { PiTelevisionDuotone } from "react-icons/pi";
 
 
 
@@ -17,19 +16,17 @@ export default function Slider({type}:{type:string}) {
 
     let value = null
 
-    if(type==='jewellery'){
+    if(type==='jewelery'){
         value=<GiNecklaceDisplay className={style.type1}></GiNecklaceDisplay>
     }
-    else if( type==='bag'){
-        value=<PiHandbagSimpleLight className={style.type1}></PiHandbagSimpleLight>
+    else if( type==='men'){
+        value=<IoShirt className={style.type1}></IoShirt>
     }
-    else if(type === 'travel'){
-        value = <BsLuggage className={style.type1}></BsLuggage>
+    else if(type === 'women'){
+        value = <GiAmpleDress className={style.type1}></GiAmpleDress>
     }
-    else if(type==='gift'){
-        value = <GiDiamondRing  className={style.type1}></GiDiamondRing>
-    }else{
-        value = <IoDiamondSharp className={style.type1}></IoDiamondSharp>
+    else{
+        value = <PiTelevisionDuotone className={style.type1}></PiTelevisionDuotone>
     }
 
     

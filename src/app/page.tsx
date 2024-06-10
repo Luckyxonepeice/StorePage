@@ -1,11 +1,10 @@
 import Image from "next/image";
-import Header from "./components/Header";
-import Slider from "./components/Slider";
+import View from "./components/View";
 
 export default function Home() {
   return (
     <main>
-      <Header></Header>
+      <View></View>
     </main>
   );
 }

@@ -1,14 +1,12 @@
-"use client"
 
-import React, { useState } from 'react'
+import React from 'react'
 import style from '../styles/Header.module.css'
 import Top from './Top';
 import Slider from './Slider';
 
 
-export default function Header() {
+export default function Header({type,setType}:{type:string,setType:any}) {
 
-  const [type , setType] = useState<string>('bag');
 
   function handleClick (e:any){
     const element = (e.target);
@@ -23,19 +21,16 @@ export default function Header() {
     <div className={style.header} >
       <Top></Top>
       <div className={style.option} onClick={handleClick}>
-        <div className={style.option1} id='bag'>
-          Bags
+        <div className={style.option1} id='men'>
+          Men&apos;s Clothing
         </div>
-        <div className={style.option1} id='travel'>
-          Travel
+        <div className={style.option1} id='women'>
+          Women&apos;s Clothing
         </div>
-        <div className={style.option1} id='accessory'>
-          Accessory
+        <div className={style.option1} id='electronics'>
+          Electronics
         </div>
-        <div className={style.option1} id='gift'>
-          Gifting
-        </div>
-        <div className={style.option1} id='jewellery'>
+        <div className={style.option1} id='jewelery'>
           Jewellery
         </div>
       </div>
